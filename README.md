@@ -69,6 +69,23 @@ EC2 Scaling
 Environment Strategy
 Environment	                              Behavior
 Dev	                                      Minimal resources, no auto scaling
-Prod	                                  Full auto scaling enabled
+Prod	                                    Full auto scaling enabled
 
 ---------------
+
+Key Features
+* Infrastructure as Code (Terraform)
+* Multi-service microservices architecture
+* High availability across Availability Zones
+* Automatic scaling at both:
+   * Application level (ECS tasks)
+   * Infrastructure level (EC2 instances)
+* Secure networking with private subnets
+
+---------
+
+Deployment
+Initialize Terraform
+
+</> Bash
+terraform init
