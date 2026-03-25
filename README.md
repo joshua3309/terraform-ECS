@@ -69,7 +69,7 @@ EC2 Scaling
 Environment Strategy
 Environment	                              Behavior
 Dev	                                      Minimal resources, no auto scaling
-Prod	                                    Full auto scaling enabled
+Prod	                                  Full auto scaling enabled
 
 ---------------
 
@@ -90,11 +90,21 @@ Initialize Terraform
 terraform init
 
 Select Workspace
+</> Bash
 terraform workspace select dev
 # or
 terraform workspace select prod
 
 Apply Infrastructure
+</> Bash
 terraform apply
 
 -----------
+
+Notes
+* Auto scaling is enabled only in production
+* Capacity Provider ensures EC2 scaling aligns with ECS demand
+* Services share EC2 resources unless CPU/memory limits are enforced
+
+---------------
+
