@@ -86,6 +86,15 @@ Key Features
 
 Deployment
 Initialize Terraform
-
 </> Bash
 terraform init
+
+Select Workspace
+terraform workspace select dev
+# or
+terraform workspace select prod
+
+Apply Infrastructure
+terraform apply
+
+-----------
